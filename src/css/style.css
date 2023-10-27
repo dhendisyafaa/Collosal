@@ -1,0 +1,159 @@
+:root {
+    --purple: #6016FC;
+    --dark-purple: rgba(34, 16, 72, 1);
+    --cyan: #16FCD2;
+    --muted: #FFFFFF99;
+    --light: rgba(255, 255, 255, 0.05)
+}
+
+body {
+    background-image: url("/src/img/background.png");
+    background-repeat: no-repeat;
+    height: max-content;
+    background-color: #3F2379;
+}
+
+header .wrapper-nav {
+    padding: 20px;
+}
+
+nav ul {
+    gap: 50px;
+}
+
+nav ul li>a {
+    color: #FFFFFFCC;
+    text-decoration: none;
+}
+
+.logo {
+    gap: 18px;
+}
+
+.collosal {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+
+.wrapper-page-title {
+    max-width: 601px;
+    margin-bottom: 50px;
+}
+
+.wrapper-page-title p:nth-child(1) {
+    line-height: 54px;
+}
+
+main {
+    margin-top: 80px;
+}
+
+main section#feature-card>div {
+    padding: 30px;
+}
+
+main section#feature-card>div img {
+    margin-bottom: 20px;
+}
+
+main section#feature-card>div div {
+    max-width: 239px;
+}
+
+main section#feature-card>div img {
+    padding: 13px;
+    background-color: var(--light);
+}
+
+main section#feature-card>div div p:nth-child(1) {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+main section#feature-card>div div p:nth-child(2) {
+    color: var(--muted);
+    line-height: 32px;
+}
+
+main section#partner {
+    border-top: 1px solid var(--muted);
+    border-bottom: 1px solid var(--muted);
+    padding: 32px 0px;
+    row-gap: 20px;
+}
+
+main section#project div:nth-child(2) img {
+    width: 502px;
+    height: 636px;
+}
+
+main section#pricing {
+    background-color: var(--dark-purple);
+    margin: 20px;
+    padding: 30px 0px;
+    border-radius: 30px;
+}
+
+main section#pricing div .card-pricing>div {
+    border: 1px solid rgb(229, 255, 0);
+    width: 328px;
+    height: 474px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+main section#pricing div .card-pricing>div:nth-child(1) {
+    background-color: #3F2379;
+}
+
+main section#pricing div .card-pricing>div:nth-child(2) {
+    background-color: #233679;
+}
+
+main section#pricing div .card-pricing>div:nth-child(3) {
+    background-color: #792366;
+}
+
+main section#testimoni div .card-testimoni>div {
+    width: 415px;
+    height: 447px;
+    padding: 30px;
+    background-color: var(--light);
+}
+
+main section#testimoni div .card-testimoni>div:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+    border: 1px solid var(--purple);
+}
+
+main section#callout p {
+    width: 589px;
+}
+
+footer {
+    display: grid;
+    padding: 30px 0px;
+    grid-template-columns: auto auto auto auto;
+}
+
+@media screen and (max-width: 600px) {
+    nav, .hidden-illustration {
+        display: none;
+    }
+
+    main section#testimoni div .card-testimoni>div:hover {
+        transform: scale(101%);
+        transition: 0.3s;
+        border: 1px solid var(--purple);
+    }
+
+    footer {
+        row-gap: 20px;
+        grid-template-columns: auto auto;
+    }
+
+}
