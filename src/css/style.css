@@ -98,7 +98,6 @@ main section#pricing {
 }
 
 main section#pricing div .card-pricing>div {
-    border: 1px solid rgb(229, 255, 0);
     width: 328px;
     height: 474px;
     padding: 30px;
