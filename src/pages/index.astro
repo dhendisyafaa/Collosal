@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import InnerLayout from "../layouts/InnerLayout.astro";
+import Section1 from "../components/HomepageContent/Section-1.astro";
+import Section2 from "../components/HomepageContent/Section-2.astro";
+import Section3 from "../components/HomepageContent/Section-3.astro";
+import Section4 from "../components/HomepageContent/Section-4.astro";
+---
+
+<Layout title="Homepage">
+  <main>
+    <InnerLayout>
+      <Section1 />
+      <Section2 />
+      <Section3 />
+    </InnerLayout>
+    <Section4 />
+  </main>
+</Layout>

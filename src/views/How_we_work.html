@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "bg-frame": "url(./../public/images/bg-blur.svg)",
+            },
+            fontFamily: {
+              Noto: "Noto Sans",
+            },
+            colors: {
+              'figma-green': "#16FCD2",
+              'figma-purple': "#6016FC",
+              'figma-White': "#FFFFFF",
+              'figma-Black': "#000000",
+              'figma-hover': "#290054",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        *::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    </style>
+    <link rel="icon" href="./../assets/images/logo-icons.svg" type="image/svg+xml">
+    <title>Colosal</title>
+  </head>
+  <body class="bg-bg-frame backdrop-blur-2xl font-Noto ">
+    <section class="leading-page bg-no-repeat bg-cover w-screen h-screen">
+      <div class="w-full h-[100px] flex justify-center items-center">
+        <nav class="flex justify-between items-center w-[1000px] h-[22px]">
+          <div class="flex items-center gap-4">
+            <img src="../assets/images/logo-icons.svg" alt="">
+            <h1 class="text-white font-bold text-2xl">Collosal.</h1>
+          </div>
+          <ul class="flex gap-[50px] font-normal text-sm text-figma-White/80">
+            <li class="hover:font-bold duration-500"><a href="">Services</a></li>
+            <li class="hover:font-bold duration-500"><a href="">How We Work</a></li>
+            <li class="hover:font-bold duration-500"><a href="">Projects</a></li>
+            <li class="hover:font-bold duration-500"><a href="">About</a></li>
+          </ul>
+          <button class="text-figma-White px-[30px] py-[10px] bg-figma-White/5 text-sm font-medium rounded-md hover:bg-figma-White/20 duration-500">Contact</button>
+        </nav>
+      </div>
+      <div class="w-full h-[540px] flex  flex-col justify-center items-center text-center relative">
+        <p class="text-figma-green font-semibold text-base">HOW WE WORK</p>
+        <div class="w-[507px] h-[162px]">
+          <p class="text-figma-White text-4xl font-bold">We have a workflow that allows the job to be delivered well</p>
+        </div>
+        <div class="bg-figma-White/10 w-[1022px] h-[2px] absolute bottom-0"></div>
+      </div>
+      <div></div>
+    </section>
+    <section class="step-1 h-screen w-screen  flex justify-center ">
+      <div class=" flex items-center gap-[66px] ">
+          <img src="../assets/images/discuss img.svg" alt="discus-img" class="w-[411px] h-[408px]">
+          <div class="w-[476px]  leading-[48px] flex flex-col gap-[22px]">
+            <div class="flex flex-col gap-1">
+              <p class="font-semibold text-base text-figma-green">STEP 01</p>
+              <p class="text-3xl font-bold text-figma-White">Let's talk about your company's problems first</p>
+            </div>
+            <div class="flex flex-col gap-8 ">
+              <p class="font-medium text-base text-figma-White/40">After submitting the quote form, we will review the data, then we will contact you. You can discuss with our team regarding your problem and find a solution to that problem.</p>
+              <p class="font-medium text-base text-figma-White/40">In this step, you will discuss what application to build.</p>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="step-2 h-screen w-screen  flex justify-center ">
+      <div class=" flex items-center gap-[66px] ">
+          <img src="../assets/images/Development Illustration.svg" alt="discus-img" class="w-[411px] h-[408px]">
+          <div class="w-[476px]  leading-[48px] flex flex-col gap-[22px] -order-2">
+            <div class="flex flex-col gap-1">
+              <p class="font-semibold text-base text-figma-green">STEP 02</p>
+              <p class="text-3xl font-bold text-figma-White">Doing planning, design and development until everything is finished</p>
+            </div>
+            <div class="flex flex-col gap-8 ">
+              <p class="font-medium text-base text-figma-White/40">When everything is agreed upon, our team will make plans related to the application that will be created. Starting from analysis, design, to development.</p>
+              <p class="font-medium text-base text-figma-White/40">In this step, the application is 100% complete.</p>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="step-3 h-screen w-screen  flex justify-center ">
+      <div class=" flex items-center gap-[66px] ">
+          <div>
+            <div class="absolute">
+              <img src="../assets/images/Group 46.svg" alt="gruop-img" class="w-[411px] h-[408px] absolute">
+              <img src="../assets/images/vertikal.svg" alt="">
+            </div>
+            <img src="../assets/images/vertikal.svg" alt="" class="rotate-90">
+          </div>
+          <div class="w-[476px]  leading-[48px] flex flex-col gap-[22px]">
+            <div class="flex flex-col gap-1">
+              <p class="font-semibold text-base text-figma-green">STEP 03</p>
+              <p class="text-3xl font-bold text-figma-White">The project is complete and we ship all the project assets, and access to the server</p>
+            </div>
+            <div class="flex flex-col gap-8 ">
+              <p class="font-medium text-base text-figma-White/40">We will be responsible for delivering all the project assets to you, don't worry. These assets include, design files, source code, server access, and so on.</p>
+              <p class="font-medium text-base text-figma-White/40">In this step, everything is done and the contract ends.</p>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="h-screen w-screen ">
+      <div class="h-[200px] flex justify-center items-center  ">
+        <div class="max-w-[1039px] flex gap-11 flex-col">
+          <div class="w-[1024px] h-[2px] bg-figma-White/10 "></div>
+          <div class="flex items-center">
+            <p class="text-figma-White w-[598px] font-bold text-3xl">We've prepared everything, it's time for you to tell the problem</p>
+            <div class="action gap-[10px]">
+              <button class="text-figma-White bg-figma-purple px-[55px] py-[15px] rounded-sm hover:bg-figma-hover duration-700">Send Quote</button>
+              <button class="text-figma-White bg-figma-White/10 px-[55px] py-[15px] rounded-sm">Ask Us</button>
+            </div>
+          </div>
+          <div class="w-[1024px] h-[2px] bg-figma-White/10 "></div>
+        </div>
+      </div>
+      <footer class=" flex justify-center mt-[90px] w-full">
+        <div class="w-[901px] h-[256px]  flex justify-between">
+          <div class="">
+            <div class="flex items-center gap-4">
+              <img src="../assets/images/CollectionOutline.svg" alt="">
+              <p class="text-figma-White text-2xl font-bold">Collosal.</p>
+            </div>
+            <div class="text-figma-White/60 text-base font-semibold">
+              <p>Copyright © 2021</p>
+              <p>Design By Collosal LLC</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[20px]">
+            <p class="text-figma-White text-sm font-medium">SERVICES</p>
+            <div class="text-figma-White/60 font-normal text-base flex flex-col gap-[10px]">
+              <p>Web Development</p>
+              <p>App Development</p>
+              <p>UI Design</p>
+              <p>Consultation</p>
+              <p>Maintenance</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[20px]">
+            <p class="text-figma-White text-sm font-medium">COMPANY</p>
+            <div class="text-figma-White/60 font-normal text-base flex flex-col gap-[10px]">
+              <p>About</p>
+              <p>Contact</p>
+              <p>Send Quote</p>
+              <p>Privacy Policy</p>
+              <p>Term of Service</p>
+              <p>Jobs</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[20px]">
+            <p class="text-figma-White text-sm font-medium">RESOURCES</p>
+            <div class="text-figma-White/60 font-normal text-base flex flex-col gap-[10px]">
+              <p>Support</p>
+              <p>Documentation</p>
+              <p>License</p>
+              <p>Sitemap</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
