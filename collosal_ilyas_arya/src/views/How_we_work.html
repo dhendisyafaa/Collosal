@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "bg-frame": "url(./../assets/images/bg-blur.svg)",
+            },
+            fontFamily: {
+              Noto: "Noto Sans",
+            },
+            colors: {
+              'figma-green': "#16FCD2",
+              'figma-purple': "#6016FC",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        *::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    </style>
+     <link rel="icon" href="./../assets/images/logo-icons.svg" type="image/svg+xml">
+     <title>Colosal</title>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline">ini laman "how we work"</h1>
+  </body>
+</html>

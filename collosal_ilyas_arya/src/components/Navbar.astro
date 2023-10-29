@@ -1,0 +1,85 @@
+---
+const ayam = Astro.props.show;
+
+function toggle() {
+  console.log("haii");
+}
+---
+
+<nav class="flex items-center justify-between w-full h-max sticky p-5">
+  <a href="/">
+    <img src="/images/logo.svg" alt="" />
+  </a>
+  <div class="items-center gap-10 hidden lg:flex">
+    <a
+      href=""
+      class="text-base font-normal text-white/80 hover:text-white transition-all duration-300"
+      >{ayam}</a
+    >
+    <a
+      href="/How-we-work"
+      class="text-base font-normal text-white/80 hover:text-white transition-all duration-300"
+      >How we Work</a
+    >
+    <a
+      href=""
+      class="text-base font-normal text-white/80 hover:text-white transition-all duration-300"
+      >Projects</a
+    >
+    <a
+      href=""
+      class="text-base font-normal text-white/80 hover:text-white transition-all duration-300"
+      >about</a
+    >
+  </div>
+  <button class="hidden lg:block transparant-button py-3 px-6">Contact</button>
+  <label class="flex lg:hidden flex-col justify-between h-8 group">
+    <input id="menu" type="checkbox" class="sr-only peer" />
+    <div
+      class="h-1.5 rounded-md w-10 transition-all bg-white/5 ease-in-out peer-checked:bg-white peer-checked:origin-top-left peer-checked:duration-300 peer-checked:rotate-45"
+    >
+    </div>
+    <div
+      class="h-1.5 rounded-md w-10 transition-all bg-white/5 ease-in-out peer-checked:bg-white peer-checked:scale-0 peer-checked:duration-300"
+    >
+    </div>
+    <div
+      class="h-1.5 rounded-md w-10 transition-all bg-white/5 ease-in-out peer-checked:bg-white peer-checked:origin-bottom-left peer-checked:duration-300 peer-checked:-rotate-45"
+    >
+    </div>
+  </label>
+</nav>
+
+<div
+  id="tab_menu"
+  class="bg-white/30 h-72 fixed top-16 w-full hide transition-all duration-300 flex-col gap-5 p-5"
+>
+  <a
+    href=""
+    class="text-base font-normal text-white/80 hover:text-white transition-all duration-300"
+    >{ayam}</a
+  >
+  <a
+    href="/How-we-work"
+    class="text-base font-normal text-white/80 hover:text-white transition-all duration-300"
+    >How we Work</a
+  >
+  <a
+    href=""
+    class="text-base font-normal text-white/80 hover:text-white transition-all duration-300"
+    >Projects</a
+  >
+  <a
+    href=""
+    class="text-base font-normal text-white/80 hover:text-white transition-all duration-300"
+    >about</a>
+</div>
+
+<script>
+  const menu = document.querySelector("#menu");
+  const tabMenu = document.querySelector("#tab_menu");
+  menu.addEventListener("change", function name() {
+    tabMenu.classList.toggle("hide");
+    tabMenu.classList.toggle("show");
+  });
+</script>
